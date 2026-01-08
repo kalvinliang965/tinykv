@@ -1,0 +1,3 @@
+{"Get":"key"}
+{"Delete":"key"}
+{"Put":["key","val"]}
