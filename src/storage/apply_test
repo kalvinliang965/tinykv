@@ -1,6 +1,0 @@
-{"Get":"key"}
-{"Get":"key1"}
-{"Get":"key2"}
-{"Put":["key1","val1"]}
-{"Put":["key2","val2"]}
-{"Put":["key3","val3"]}

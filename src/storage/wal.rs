@@ -75,7 +75,7 @@ mod testse {
         let wal = FileSystemWAL::new(&path);
         let v = wal.replay();
         assert_eq!(Ok(vec![Command::Get("key".to_string())]), v);
-        fs::remove_file("replay_test");
+        fs::remove_file(&path)?;
         Ok(())
     }
 
@@ -97,7 +97,7 @@ mod testse {
         }
         let act = wal.replay();
         assert_eq!(Ok(exp), act);
-        fs::remove_file("record_test");
+        fs::remove_file(&path)?;
         Ok(())
     }
 }
