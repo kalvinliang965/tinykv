@@ -4,6 +4,7 @@ pub mod error;
 pub mod kv;
 pub mod raft;
 pub mod storage;
+pub mod coordinator;
 pub mod util;
 
 use anyhow::Result;

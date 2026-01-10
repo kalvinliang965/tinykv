@@ -23,7 +23,7 @@ pub struct FileSystemWAL {
 }
 
 impl FileSystemWAL { 
-    fn new(path: &str) -> Self { 
+    pub fn new(path: &str) -> Self { 
         Self { 
             path: path.to_string()
         }
